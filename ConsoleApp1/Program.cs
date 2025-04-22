@@ -688,7 +688,7 @@ namespace ProgrammingTasks
                 MinorityWins = minorityWins;
             }
             
-            public override double GetQuality()
+            public new double GetQuality()
             {
                 if (Battles == 0) return 0;
                 return Math.Pow(MinorityWins, 2) / Battles + base.GetQuality();
